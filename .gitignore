@@ -1,0 +1,13 @@
+.DS_Store
+*.swp
+*.swo
+
+# Local tooling and environment files
+.env
+.env.*
+!.env.example
+
+# Common local build output
+node_modules/
+dist/
+build/

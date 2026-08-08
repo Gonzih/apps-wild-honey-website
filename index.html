@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wild Honey on The Porch — App Development</title>
+<meta name="description" content="Wild Honey on The Porch LLC is a small independent app studio. Offline-first iOS and Android apps, built slowly and carefully.">
+<meta property="og:title" content="Wild Honey on The Porch LLC">
+<meta property="og:description" content="A small independent studio. We build offline-first apps for iOS and Android.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ── flock: ambient background birds ─────────────────────── -->
+<div class="flock" aria-hidden="true">
+  <svg class="bird b1" viewBox="0 0 100 40"><use href="#gull"/></svg>
+  <svg class="bird b2" viewBox="0 0 100 40"><use href="#gull"/></svg>
+  <svg class="bird b3" viewBox="0 0 100 40"><use href="#gull"/></svg>
+  <svg class="bird b4" viewBox="0 0 100 40"><use href="#gull"/></svg>
+  <svg class="bird b5" viewBox="0 0 100 40"><use href="#gull"/></svg>
+</div>
+
+<!-- sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="gull" d="M4 24c14 0 22-6 30-14 5-5 9-7 14-7s9 2 14 7c8 8 16 14 30 14-14 3-24 0-32-6-4-3-8-5-12-5s-8 2-12 5C28 24 18 27 4 24z"/>
+  </defs>
+</svg>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M32 6l22 12v14c0 12-9 21-22 26C19 53 10 44 10 32V18z" class="hex"/>
+      <path d="M18 34c9 0 15-4 20-9 3-3 6-5 9-5s6 2 9 5" class="wing"/>
+      <path d="M18 34c9 2 16 0 21-4" class="wing2"/>
+      <circle cx="45" cy="27" r="1.6" class="eye"/>
+    </svg>
+    <span class="brandtext">Wild Honey <em>on The Porch</em></span>
+  </a>
+  <nav>
+    <a href="#apps">Apps</a>
+    <a href="#craft">How we build</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ── hero ─────────────────────────────────────────────────── -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Wild Honey on The Porch LLC</p>
+    <h1>A small studio,<br><span class="grad">building slowly</span> and carefully.</h1>
+    <p class="lede">
+      We make apps for people who live a little outside the standard map.
+      They work offline, they keep your data on your device, and we take our
+      time with them.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#apps">See our apps</a>
+      <a class="btn ghost" href="#craft">How we build</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 400 340">
+      <!-- sun low over the water -->
+      <circle cx="228" cy="150" r="74" class="sun"/>
+      <circle cx="228" cy="150" r="104" class="halo"/>
+
+      <!-- sea: implied by swells alone, no box -->
+      <path class="horizon" d="M64 236h272"/>
+      <path class="swell s1" d="M8 254c30-7 52 7 82 0s52-7 82 0 52 7 82 0 52-7 82 0"/>
+      <path class="swell s2" d="M-12 276c34-8 58 8 92 0s58-8 92 0 58 8 92 0 58-8 92 0"/>
+      <path class="swell s3" d="M4 300c30-6 50 6 80 0s50-6 80 0 50 6 80 0 50-6 80 0"/>
+      <path class="glint" d="M186 258h84M204 282h60"/>
+
+      <!-- flock, riding the air -->
+      <g class="gulls">
+        <path class="g g1" d="M74 96c17 0 27-7 37-17 6-6 11-9 17-9s11 3 17 9c10 10 20 17 37 17-17 4-30 0-40-7-5-4-10-6-14-6s-9 2-14 6c-10 7-23 11-40 7z"/>
+        <path class="g g2" d="M132 48c11 0 18-5 24-11 4-4 7-6 11-6s7 2 11 6c6 6 13 11 24 11-11 2-19 0-26-5-3-2-6-4-9-4s-6 2-9 4c-7 5-15 7-26 5z"/>
+        <path class="g g3" d="M266 82c9 0 15-4 20-9 3-3 6-5 9-5s6 2 9 5c5 5 11 9 20 9-9 2-16 0-21-4-3-2-5-3-8-3s-5 1-8 3c-5 4-12 6-21 4z"/>
+        <path class="g g4" d="M40 168c7 0 12-3 16-7 3-3 5-4 7-4s4 1 7 4c4 4 9 7 16 7-7 2-13 0-17-3-2-2-4-3-6-3s-4 1-6 3c-4 3-10 5-17 3z"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ── apps ─────────────────────────────────────────────────── -->
+<section class="section" id="apps">
+  <div class="shead">
+    <h2>Our Apps</h2>
+    <p>One shipping. One in build.</p>
+  </div>
+
+  <div class="apps">
+
+    <article class="app featured">
+      <div class="deckfan" aria-hidden="true">
+        <img class="cf c-back" src="assets/void-tarot/cards/card-back.jpg" alt="" loading="lazy" decoding="async" width="240" height="360">
+        <img class="cf c-a" src="assets/void-tarot/cards/09-hermit.jpg" alt="" loading="lazy" decoding="async" width="240" height="360">
+        <img class="cf c-b" src="assets/void-tarot/cards/02-high-priestess.jpg" alt="" loading="lazy" decoding="async" width="240" height="360">
+        <img class="cf c-c" src="assets/void-tarot/cards/17-star.jpg" alt="" loading="lazy" decoding="async" width="240" height="360">
+      </div>
+      <div class="app-body">
+        <p class="badge live">Releasing first</p>
+        <h3>Void Tarot</h3>
+        <p class="app-tag">A tarot deck that behaves like a real one</p>
+        <p>
+          A full 78-card deck built around the cards themselves — you drag the
+          deck, fan it, and turn cards with your thumb, with the physics and
+          haptics of the real thing. Five spreads are free; a one-time purchase
+          unlocks six more.
+        </p>
+        <ul class="feats">
+          <li>Full 78-card deck with reviewed upright and reversed meanings</li>
+          <li>Tactile deck — direct-drag fan, velocity-aware release, 3D flips with haptics and sound</li>
+          <li>Interpretation generated on your device; readings aren't sent to a server</li>
+          <li>Private journal and reading history, synced only through your own iCloud</li>
+          <li>No account, no email, no sign-in gate</li>
+        </ul>
+
+        <p class="ritual-head">Eleven spreads — five free, six paid</p>
+        <ul class="rituals">
+          <li><img src="assets/void-tarot/icons/daily-void.svg" alt="" aria-hidden="true" width="40" height="40"><span>Daily Void</span></li>
+          <li><img src="assets/void-tarot/icons/card-pull.svg" alt="" aria-hidden="true" width="40" height="40"><span>Card Pull</span></li>
+          <li><img src="assets/void-tarot/icons/yes-no.svg" alt="" aria-hidden="true" width="40" height="40"><span>Yes / No</span></li>
+          <li><img src="assets/void-tarot/icons/past-present-future.svg" alt="" aria-hidden="true" width="40" height="40"><span>Past / Present / Future</span></li>
+          <li><img src="assets/void-tarot/icons/journal-ritual.svg" alt="" aria-hidden="true" width="40" height="40"><span>Journal Ritual</span></li>
+          <li class="sealed"><img src="assets/void-tarot/icons/threshold.svg" alt="" aria-hidden="true" width="40" height="40"><span>Threshold</span></li>
+          <li class="sealed"><img src="assets/void-tarot/icons/pattern-break.svg" alt="" aria-hidden="true" width="40" height="40"><span>Pattern Break</span></li>
+          <li class="sealed"><img src="assets/void-tarot/icons/relation-mirror.svg" alt="" aria-hidden="true" width="40" height="40"><span>Relation Mirror</span></li>
+          <li class="sealed"><img src="assets/void-tarot/icons/work-money-current.svg" alt="" aria-hidden="true" width="40" height="40"><span>Work / Money Current</span></li>
+          <li class="sealed"><img src="assets/void-tarot/icons/abyss-cross.svg" alt="" aria-hidden="true" width="40" height="40"><span>The Abyss Cross</span></li>
+          <li class="sealed"><img src="assets/void-tarot/icons/sealed.svg" alt="" aria-hidden="true" width="40" height="40"><span>Chakra Current</span></li>
+        </ul>
+
+        <div class="app-cta">
+          <span class="store-soon">Coming to the App Store</span>
+          <span class="plat">iOS 26+ · SwiftUI · on-device AI</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="app sg">
+      <div class="phone" aria-hidden="true">
+        <div class="screen">
+          <div class="map">
+            <span class="pin p1"></span><span class="pin p2"></span>
+            <span class="pin p3"></span><span class="pin p4 me"></span>
+            <svg class="roads" viewBox="0 0 200 300" preserveAspectRatio="none">
+              <path d="M-10 90 C60 70 130 120 210 96"/>
+              <path d="M-10 190 C70 210 120 160 210 186"/>
+              <path d="M52 -10 C40 90 78 190 62 310"/>
+              <path d="M148 -10 C160 110 126 200 142 310"/>
+            </svg>
+          </div>
+          <div class="sheet">
+            <span class="grab"></span>
+            <p class="sheet-t">3 communities nearby</p>
+            <div class="row"><span class="av"></span><span class="ln w70"></span></div>
+            <div class="row"><span class="av"></span><span class="ln w50"></span></div>
+          </div>
+          <div class="tabs">
+            <span class="tab on">Discover</span><span class="tab">Requests</span>
+            <span class="tab">Messages</span><span class="tab">Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-body">
+        <p class="badge next">In development</p>
+        <h3>Simorgh</h3>
+        <p class="app-tag">Nomads and land-based community projects, matched</p>
+        <p>
+          A marketplace connecting traveling nomads with intentional
+          communities that have housing capacity and work that needs hands.
+          We spent most of the design time on trust and safety, because that's
+          the part that decides whether any of it works.
+        </p>
+        <ul class="feats">
+          <li>Discover communities and project calls by map or list</li>
+          <li>Hosts post stays with real availability, capacity, and stay rules</li>
+          <li>Requests, acceptances, and messages are all enforced server-side</li>
+          <li>Reciprocal reviews that unlock after a stay is completed</li>
+          <li>Private reporting, directional blocking, and a moderation queue</li>
+          <li>Opt-in safety help — approximate location only, one specific audience, two-hour expiry</li>
+        </ul>
+        <div class="app-cta">
+          <span class="store-soon dim">V1 in build</span>
+          <span class="plat plat-s">iOS &amp; Android · Expo · React Native</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── craft ────────────────────────────────────────────────── -->
+<section class="section alt" id="craft">
+  <div class="shead">
+    <h2>How we build</h2>
+    <p>How the two apps are put together.</p>
+  </div>
+  <div class="repos">
+    <div class="repo static">
+      <span class="dot"></span>
+      <div>
+        <strong>Native Swift</strong>
+        <span>Void Tarot is Swift and SwiftUI on iOS 26. The card handling
+          needs direct access to gestures and haptics, so it's written straight
+          against the platform — 120&nbsp;FPS on ProMotion.</span>
+      </div>
+    </div>
+    <div class="repo static">
+      <span class="dot"></span>
+      <div>
+        <strong>On-device generation</strong>
+        <span>Readings are produced locally with Apple's Foundation Models, so
+          your questions and journal entries stay on your phone.</span>
+      </div>
+    </div>
+    <div class="repo static">
+      <span class="dot"></span>
+      <div>
+        <strong>CloudKit sync</strong>
+        <span>Void Tarot syncs through your own private CloudKit database. We
+          don't hold a copy and can't read it.</span>
+      </div>
+    </div>
+    <div class="repo static">
+      <span class="dot"></span>
+      <div>
+        <strong>Written down first</strong>
+        <span>Every behavior change updates the spec in the same commit and
+          ships against an automated test matrix. It's slow, but it's how we
+          like to work.</span>
+      </div>
+    </div>
+  </div>
+  <p class="simorgh">
+    <strong>Where the name comes from.</strong> <em>Sī murgh</em> is Persian for
+    "thirty birds" — the pun at the heart of a 12th-century poem in which thirty
+    birds travel a long way to find a legendary bird, and turn out to be it. It
+    seemed like a reasonable name for a product about people finding each other.
+  </p>
+</section>
+
+<!-- ── contact ──────────────────────────────────────────────── -->
+<section class="section" id="contact">
+  <div class="shead">
+    <h2>Get in touch</h2>
+    <p>Support, press, or just to say hello.</p>
+  </div>
+  <div class="contact-cta">
+    <a class="btn primary lg" href="mailto:mishelleweaver@gmail.com?subject=Wild%20Honey%20on%20The%20Porch">Contact us</a>
+    <a class="btn ghost lg" href="support.html">Support &amp; FAQ</a>
+  </div>
+  <div class="contact">
+    <a class="ccard" href="mailto:mishelleweaver@gmail.com?subject=Void%20Tarot%20Support">
+      <strong>Void Tarot support</strong>
+      <span>App-specific help and bug reports</span>
+    </a>
+    <a class="ccard" href="mailto:mishelleweaver@gmail.com?subject=Simorgh%20enquiry">
+      <strong>Simorgh</strong>
+      <span>Beta access and host enquiries</span>
+    </a>
+    <a class="ccard" href="mailto:mishelleweaver@gmail.com?subject=Press%20enquiry">
+      <strong>Press</strong>
+      <span>Media requests and assets</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <div class="fbrand">
+      <svg class="mark sm" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 6l22 12v14c0 12-9 21-22 26C19 53 10 44 10 32V18z" class="hex"/>
+        <path d="M18 34c9 0 15-4 20-9 3-3 6-5 9-5s6 2 9 5" class="wing"/>
+        <path d="M18 34c9 2 16 0 21-4" class="wing2"/>
+      </svg>
+      <span>Wild Honey on The Porch LLC</span>
+    </div>
+    <nav class="flinks">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:mishelleweaver@gmail.com?subject=Wild%20Honey%20on%20The%20Porch">Contact</a>
+    </nav>
+    <p class="copy">© <span id="yr">2026</span> Wild Honey on The Porch LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // reveal on scroll
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.section, .app, .hero-inner, .hero-art').forEach(el => {
+    el.classList.add('rv'); io.observe(el);
+  });
+</script>
+
+</body>
+</html>

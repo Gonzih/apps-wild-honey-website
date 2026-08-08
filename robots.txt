@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wildhoneyontheporch.com/sitemap.xml
