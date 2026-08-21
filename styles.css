@@ -124,10 +124,6 @@ img,svg{max-width:100%}
   padding:5rem 1.5rem 4.5rem;
   display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;
 }
-.eyebrow{
-  font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--honey-dp);font-weight:600;margin-bottom:1rem;
-}
 h1{font-size:clamp(2.3rem,5.4vw,3.7rem);margin-bottom:1.2rem}
 .grad{
   background:linear-gradient(100deg,var(--amber),var(--honey) 34%,var(--ocean) 88%);

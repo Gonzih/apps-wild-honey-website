@@ -9,17 +9,20 @@ App Store review requires a real developer web presence with a reachable
 showcase for shipped and upcoming apps.
 
 - `index.html` — home: apps, about, open source, contact
-- `support.html` — **App Store Support URL** → `/support.html`
-- `privacy.html` — **App Store Privacy Policy URL** → `/privacy.html`
-- `terms.html` — EULA / Terms of Service
-- `styles.css` — single stylesheet, light + dark via `prefers-color-scheme`
-- `assets/favicon.svg` — honeycomb + bird mark
+- `void-tarot/` — dedicated Void Tarot marketing page
+- `void-tarot/support.html` — **Void Tarot App Store Support URL**
+- `void-tarot/privacy.html` — **Void Tarot Privacy Policy URL**
+- `void-tarot/terms.html` — Void Tarot Terms of Use
+- `support.html`, `privacy.html`, `terms.html` — studio-wide pages
+- `styles.css` — studio-wide light/dark visual system
+- `void-tarot/void-tarot.css` — dedicated dark Void Tarot visual system
+- `assets/favicon.svg` and `assets/void-tarot/` — studio and app-specific marks, sigils, and deck art
 
 ## Stack
 
-None. Hand-written HTML/CSS, one small inline script for the copyright year and
-scroll reveal. No build step, no dependencies, no external requests — every
-graphic is inline SVG.
+None. Hand-written HTML/CSS with small inline scripts for the copyright year and
+studio scroll reveal. No build step, runtime dependencies, analytics, or remote
+asset requests. Graphics are bundled SVG and optimized deck images.
 
 ## Local preview
 
@@ -43,8 +46,8 @@ npx wrangler pages deploy . --project-name=wild-honey-website
 
 ## Before going live
 
-- [ ] Point `wildhoneyontheporch.com` (or chosen domain) at the host
-- [ ] Update the domain in `sitemap.xml` and `robots.txt` if it differs
+- [x] Point `studio.wildhoneyontheporch.com` at the GitHub Pages host
+- [x] Use the live hostname in `sitemap.xml` and `robots.txt`
 - [ ] Swap the support email if a dedicated `support@` address is set up
       (it lives only inside `mailto:` hrefs — see the contact convention below)
 - [ ] Fill in the LLC's state of organization in `terms.html` §11 if desired

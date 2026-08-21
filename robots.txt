@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wildhoneyontheporch.com/sitemap.xml
+Sitemap: https://studio.wildhoneyontheporch.com/sitemap.xml
