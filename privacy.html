@@ -31,12 +31,12 @@
 <main class="doc">
   <a class="back" href="index.html">← Back to home</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: August 20, 2026</p>
+  <p class="updated">Last updated: October 12, 2026</p>
 
   <div class="callout">
     <p><strong>The short version.</strong> We don't sell or broker your data and
     we use no advertising SDKs or cross-app tracking. <strong>Void Tarot</strong>
-    needs no account and keeps everything on your device or in your own iCloud —
+    needs no account and keeps app content on your device —
     we never receive your readings. <strong>Simorgh</strong> is a marketplace, so
     it does need an account and a profile to connect you with other people;
     Section 2 covers what that involves.</p>
@@ -76,18 +76,19 @@
     place, coordinates, or time zone.
   </p>
 
-  <h3>Sync uses your iCloud, not our database</h3>
-  <p>
-    If you are signed in to iCloud, your readings, journal entries, and settings
-    sync through your own private CloudKit database. That data lives in your
-    Apple account under Apple's privacy terms. We cannot access, read, or recover
-    it. Disabling iCloud for the App keeps everything local to the device.
-  </p>
+  <h3>Local storage and deletion</h3>
+  <p>This build does not enable iCloud sync. In Settings, <strong>Log out</strong>
+    keeps local data; <strong>Delete my profile and data</strong> requires
+    destructive confirmation and immediately erases local profiles, birth information,
+    readings, journals, transcripts, recordings, and preferences. Existing backups,
+    exported copies, data synced by earlier builds, and support emails are outside
+    that deletion. Apple purchases and subscriptions are separate.</p>
 
   <h3>Purchases</h3>
   <p>
-    Premium readings are offered through annual and monthly auto-renewable
-    subscriptions processed by Apple. Apple handles the transaction and we
+    Premium purchases are processed by Apple. The configured offer may be a
+    one-time unlock or an auto-renewing subscription; the app and Apple show
+    the actual product, price, and any billing period before purchase. Apple handles the transaction and we
     never see your payment details or Apple Account credentials. The app
     receives only product information and verified purchase status needed to
     show the offer and open Premium features.
@@ -98,7 +99,8 @@
     Voice recording begins only when you tap the microphone and grant
     permission. Transcription is attempted only with Apple's on-device speech
     recognition. Saved Journal voice memo files stay on the device where they
-    were recorded and do not sync through Void Tarot's CloudKit store.
+    were recorded. Transcription requires on-device recognition; if it is
+    unavailable, no transcript is produced.
   </p>
 
   <p>
@@ -189,9 +191,12 @@
   <p>
     Where an App can work without a server, we build it that way. In Void Tarot,
     content you create — readings, journal entries, and preferences — is stored
-    on your device and, if you use iCloud, in your own private CloudKit database.
-    Deleting the App deletes its local data, and we cannot recover it for you,
-    because we never had it.
+    on your device. This build does not enable iCloud sync. Logging out keeps
+    local data. Deleting the profile and data in Settings, after confirmation,
+    erases local data immediately; deleting the App also removes its local data.
+    We cannot recover it because we never had it. Backups, exported copies,
+    and data synced by earlier builds must be managed separately. Neither
+    deletion action cancels Apple subscriptions or removes Apple purchase records.
   </p>
   <p>
     Simorgh is a marketplace and therefore necessarily server-backed: listings,
